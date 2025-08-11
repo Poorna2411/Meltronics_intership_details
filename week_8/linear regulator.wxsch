@@ -1,0 +1,100 @@
+SIMetrixFile type=schematic format=1.0 revision=9
+.Component
+.Schematic
+.SymbolLibrary
+.Symbol
+Attributes format="1.0" revision=9 name="gnd" description="Ground" catalog="Connections;Terminals" track=1
+Segment x1=0 y1=0 x2=0 y2=120
+Segment x1=-120 y1=120 x2=120 y2=120
+Segment x1=-72 y1=156 x2=72 y2=156
+Segment x1=-24 y1=192 x2=24 y2=192
+Pin name="GND" order=1 x=0 y=0 visible=0
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value=0 autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="reg" description="Regulator - 3 terminal" catalog="Analog;References/Regulators" track=1
+Segment x1=0 y1=0 x2=480 y2=0
+Segment x1=0 y1=0 x2=0 y2=240
+Segment x1=480 y1=0 x2=480 y2=240
+Segment x1=-120 y1=120 x2=0 y2=120
+Segment x1=480 y1=120 x2=600 y2=120
+Segment x1=0 y1=240 x2=480 y2=240
+Segment x1=240 y1=360 x2=240 y2=240
+Pin name="GND" order=3 x=240 y=360 visible=0
+Pin name="IN" order=2 x=-120 y=120 visible=0
+Pin name="OUT" order=1 x=600 y=120 visible=0
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="X?" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="VALUE" value="SUBNAME" autopos=1 normal="Top" rotated="Right" font="Default" order=2
+.EndSymbol
+.Symbol
+Attributes format="1.0" revision=9 name="vsrc" description="Fixed Voltage Source" catalog="Sources" track=1
+Arc l=-120 t=120 r=120 b=360 x1=0 y1=360 x2=0 y2=360
+Segment x1=0 y1=0 x2=0 y2=120
+Segment x1=0 y1=156 x2=0 y2=204
+Segment x1=-24 y1=180 x2=24 y2=180
+Segment x1=0 y1=360 x2=0 y2=480
+Pin name="N" order=2 x=0 y=480 visible=0
+Pin name="P" order=1 x=0 y=0 visible=0
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value=5 autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V?" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+.EndSymbol
+.EndSymbolLibrary
+.StyleLibrary
+.EndStyleLibrary
+.Instance
+Attributes name="gnd" type="symbol" selected=0 x=3360 y=3120 orient="N0"
+Property name="guid" value="{ca25ed53-cacb-4442-be09-f3c001d29edd}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="netname" value="" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+.EndInstance
+.Instance
+Attributes name="vsrc" type="symbol" selected=0 x=1920 y=2760 orient="N0"
+Property name="guid" value="{675b129b-9344-4e7c-b0ea-ef7f4d81c93f}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="MODEL" value="V" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="VALUE" value=5 autopos=1 normal="Right" rotated="Top" font="Default" order=1
+Property name="REF" value="V1" autopos=1 normal="Right" rotated="Bottom" font="Default" order=2
+.EndInstance
+.Instance
+Attributes name="reg" type="symbol" selected=1 x=3120 y=2040 orient="N0"
+Property name="guid" value="{24bcc708-6f72-47f7-b840-fbd7fa18875a}" autopos=1 normal="Left" rotated="Left" protected=1 visible=0 font="Default"
+Property name="mapping" value="2,3,1" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="MODEL" value="X" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleNormal" value="DefaultInstance" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="StyleSelected" value="DefaultSelected" autopos=1 normal="Left" rotated="Left" visible=0 font="Default"
+Property name="REF" value="X1" autopos=1 normal="Top" rotated="Right" font="Default" order=1
+Property name="value" value="LM317-R" autopos=1 normal="Top" rotated="Right" font="Default" order=2
+.EndInstance
+Wire x1=1920 y1=2160 x2=1920 y2=2760
+.Wire
+Attributes x1=1920 y1=2160 x2=1920 y2=2760
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire x1=1920 y1=2160 x2=3000 y2=2160
+.Wire
+Attributes x1=1920 y1=2160 x2=3000 y2=2160
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Wire x1=3360 y1=2400 x2=3360 y2=3120
+.Wire
+Attributes x1=3360 y1=2400 x2=3360 y2=3120
+Property name="StyleNormal" value="DefaultWire" visible=0
+Property name="StyleSelected" value="DefaultSelected" visible=0
+.EndWire
+Text value=""
+LicenseInfo version="9.20e" feats="Basic|Advanced|SIMPLIS_IF|Demo|Schematic|Intro|Multistep|Monte|Sim" serial="unknown" user="unknown" code="unknown" binarch="x64" system="WINNT/10.0/x64/16869285888/16/1/24/1093150358" product="MPLAB Mindi"
+SimulatorMode value="simetrix"
+View x=0 y=0 snapgrid=120 offsetx=0 offsety=0 zoomlevel=31 zoom=9
+Property name="CreateProduct" value="MPLAB® Mindi™ Analog Simulator" type="value"
+Property name="GUID" value="{a4d806b9-e24a-44f9-926e-9b770740216b}" type="value"
+Property name="UserVersion" value=2 type="value"
+Property name="WriteLog" value="2/2/147/147" type="value"
+.EndSchematic
+.EndComponent
