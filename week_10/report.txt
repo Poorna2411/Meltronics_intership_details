@@ -1,0 +1,3 @@
+Plotted to 'C:\Users\kotte\Documents\kicad_projects\pir_rsic-v\smps\smps.svg'.
+Info: Done.
+Info: Done.
